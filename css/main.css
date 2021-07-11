@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@100&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background-color: #AEAEAE;
+}
+
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+}
+
+header .menu img {
+  width: 50%;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1.3em;
+}
+
+.home {
+  background-image: url(cssimages/home-background-img.png);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  color: #F0F0F0;
+  letter-spacing: 0.18em;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
