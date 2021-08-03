@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto:wght@100&display=swap");
 body {
   height: 100vh;
+  background: #211B1B;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -20,11 +21,15 @@ img {
 }
 
 .nav-container {
-  background-color: #AEAEAE;
+  background-color: rgba(174, 174, 174, 0.35);
+  position: absolute;
+  width: 100%;
 }
 
 .nav-container a {
   color: white;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 0.1em;
 }
 
 header {
@@ -34,7 +39,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1em;
+  padding: 1em 1.3em;
+  opacity: 100%;
 }
 
 header .menu img {
@@ -53,12 +59,19 @@ header ul a {
 }
 
 .home {
-  background-image: url(cssimages/home-background-img.png);
-  background-size: 150%;
-  background-repeat: no-repeat;
-  background-position: 50%;
   color: #F0F0F0;
   letter-spacing: 0.18em;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.home .home-background {
+  width: 100%;
+}
+
+.home #name-back {
+  position: absolute;
+  width: 10%;
 }
 /*# sourceMappingURL=main.css.map */
