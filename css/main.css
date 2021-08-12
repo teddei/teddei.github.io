@@ -23,6 +23,9 @@ img {
 .nav-container {
   background-color: rgba(174, 174, 174, 0.35);
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   width: 100%;
 }
 
@@ -59,6 +62,8 @@ header ul a {
 }
 
 .home {
+  position: relative;
+  width: 100%;
   color: #F0F0F0;
   letter-spacing: 0.18em;
   text-align: center;
@@ -66,12 +71,145 @@ header ul a {
   font-size: 20px;
 }
 
-.home .home-background {
-  width: 100%;
+.home-background {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
 }
 
-.home #name-back {
+.home-overlay {
   position: absolute;
-  width: 10%;
+  top: 40%;
+  width: 100%;
+  height: 100%;
+}
+
+.home-name {
+  position: absolute;
+  top: -45px;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 5em;
+  font-weight: 100;
+}
+
+.home-action {
+  position: absolute;
+  z-index: 3;
+  top: 80%;
+  width: 100%;
+  height: 7%;
+}
+
+.model {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+.model img {
+  width: 380px;
+  position: absolute;
+}
+
+.model #model1 {
+  top: 60px;
+  left: 300px;
+}
+
+.model #model2 {
+  bottom: 60px;
+  left: 60px;
+}
+
+.model #model-swoosh {
+  top: 60px;
+  left: 120px;
+  width: 550px;
+}
+
+.model-quad {
+  position: absolute;
+  right: 0;
+  border-bottom: 800px solid rgba(51, 51, 51, 0.6);
+  border-left: 300px solid transparent;
+  border-right: 0px solid transparent;
+  height: 100;
+  width: 40%;
+  z-index: 1;
+}
+
+.model-dia {
+  z-index: 0;
+  border: 280px solid transparent;
+  border-bottom: 400px solid #47000B;
+  position: absolute;
+  right: 0;
+  top: -280px;
+}
+
+.model-dia:after {
+  z-index: 0;
+  content: '';
+  position: absolute;
+  left: -280px;
+  top: 400px;
+  width: 0;
+  height: 0;
+  border: 280px solid transparent;
+  border-top: 400px solid #47000B;
+}
+
+.model-rect {
+  z-index: 2;
+  position: absolute;
+  top: 130px;
+  right: 0;
+  width: 660px;
+  height: 430px;
+  background: rgba(112, 24, 37, 0.69);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.model-rect #model-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 6em;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+}
+
+.model-rect .model-line {
+  width: 350px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 60%;
+}
+
+.model-rect #model-desc {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 0.05em;
+  padding-bottom: 20px;
+}
+
+.model-rect a {
+  opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */
