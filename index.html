@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <div class="nav-container">
+    <div id="nav-container">
         <header>
 
             <a href="#" class="menu">
@@ -18,16 +18,16 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">3D</a></li>
-                    <li><a href="#">Photos</a></li>
-                    <li><a href="#">Motion</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#model">3D</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#motion">Motion</a></li>
+                    <li><a href="#profile">About</a></li>
                 </ul>
             </nav>
         </header>
     </div>
 
-    <div class="home">
+    <div id="home">
         
         <img class="home-background" src="images/home-background-img.png" alt="">
         
@@ -42,20 +42,21 @@
             <h1 class="home-name">Edward Zhou</h1>
         </div>
         
-        <div class="home-action">
+        <div class="home-action"><a href="#model">
             <svg width="183.173" height="56.712" viewBox="0 0 183.173 56.712">
                 <g id="down-arrow" transform="translate(-868.413 -888.709)">
                     <path id="Path_1" data-name="Path 1" d="M960,944.565l91.07-55Z" fill="none" stroke="#fff" stroke-width="2"/>
                     <path id="Path_2" data-name="Path 2" d="M1051.07,944.565l-91.07-55Z" transform="translate(-91.07)" fill="none" stroke="#fff" stroke-width="2"/>
                 </g>
             </svg>
+        </a>
         </div>
     </div>
 
     <div class="main">
-        <section class="model">
-            <div class="model-quad"></div>
-            <div class="model-dia"></div>
+        <section id="model">
+            <div class="quad"></div>
+            <div class="dia"></div>
             <div class="model-rect">
                 <h1 id="model-title">3D Modeling</h1>
                 <div class="model-line"></div>
@@ -67,44 +68,67 @@
             <img id="model-swoosh" src="images/3d-swoosh.svg" alt="">
         </section>
 
-        <section class="photos">
-            <div class="left">
-                <img src="images/photos-background.svg" alt="">
-                <img src="images/photos-swoosh.svg" alt="">
-                <h1 class="photos-title">Photography</h1>
-                <p class="photos-desc">Aerials, Landscapes, Portraits</p>
-                <a href="#" class="photos-action">View Photos</a>
+        <section id="photos">
+            <div class="quad v-flip"></div>
+            <div class="dia"></div>
+            <div class="photos-rect">
+                <img id="photos-swoosh" src="images/photos-swoosh.svg" alt="">
+                <h1 id="photos-title">Photography</h1>
+                <div class="photos-line"></div>
+                <p id="photos-desc">Aerials, Landscapes, Portraits</p>
+                <a href="#" id="photos-action">View Photos</a>
             </div>
-            <img class="right" src="images/photos-img1.png" alt="photo1">
-            <img class="right" src="images/photos-img2.png" alt="photo2">
+            <img id="photo1" src="images/photos-img1.png" alt="photo1">
+            <img id="photo2" src="images/photos-img2.png" alt="photo2">
         </section>
 
-        <section class="motion">
-            <img class="left" src="images/motion-tn.png" alt="tn">
-            <div class="right">
-                <img src="images/motion-swoosh.svg" alt="">
-                <img src="images/motion-background.svg" alt="">
-                <h1 class="motion-title">Motion Graphics</h1>
-                <p class="motion-desc">Films, Animations, Hyperlapses</p>
-                <a href="#" class="motion-action">View Graphics</a>
+        <section id="motion">
+            <div class="quad"></div>
+            <div class="dia"></div>
+            <div class="motion-rect">
+                <img id="motion-swoosh" src="images/motion-swoosh2.svg" alt="">
+                <h1 id="motion-title">Motion Graphics</h1>
+                <div class="motion-line"></div>
+                <p id="motion-desc">Films, Animations, Shots</p>
+                <a href="#" id="motion-action">View Graphics</a>
             </div>
+            <img id="motion1" src="images/motion-tn.png" alt="tn">
+            
+            
         </section>
 
-        <section class="profile">
-            <img class="left" src="images/profile.png" alt="profile">
-            <div class="right">
-                <img src="images/profile-background.svg" alt="">
-                <h1 class="profile-title">About Me</h1>
-                <p class="profile-desc">I’m Edward Zhou, a 16-year-old student at 
-                    Homestead High School. Lorem ipsum 
-                    dolor sit amet, consectetur adipiscing 
-                    elit. Cras cursus pharetra neque. 
+        <section id="profile">
+            <div class="profile-quad v-flip"></div>
+            <div class="profile-rect">
+                <h1 id="profile-title">About Me</h1>
+                <div class="profile-line1"></div>
+                <p id="profile-desc1">I’m Edward Zhou, a 16-year-old student at 
+                Homestead High School. Lorem ipsum 
+                dolor sit amet, consectetur adipiscing 
+                elit. Cras cursus pharetra neque. 
                 </p>
-                <p class="profile-desc">I have hobbies and all. Lorem ipsum
-                    dolor sit amen, consectetur
-                    adpiscing elit. Cras cursus phareta
-                    neque, id volutpat augue aliquet at</p>
+                <p id="profile-desc2">I have hobbies and all. Lorem ipsum
+                dolor sit amen, consectetur
+                adpiscing elit. Cras cursus phareta
+                neque, id volutpat augue aliquet at
+                </p>
+                <div class="profile-line2"></div>
                 <a href="#" class="profile-action">More Info</a>
+            </div>
+            <img id="profile1" src="images/profile.png" alt="profile">
+
+            <div class="footer-rect">
+                <div class="footer-action v-flip">
+                    <a href="#home">
+                    <svg width="183.173" height="56.712" viewBox="0 0 183.173 56.712">
+                        <g id="down-arrow" transform="translate(-868.413 -888.709)">
+                            <path id="Path_1" data-name="Path 1" d="M960,944.565l91.07-55Z" fill="none" stroke="#fff" stroke-width="4"/>
+                            <path id="Path_2" data-name="Path 2" d="M1051.07,944.565l-91.07-55Z" transform="translate(-91.07)" fill="none" stroke="#fff" stroke-width="4"/>
+                        </g>
+                    </svg>
+                </a>
+                </div>
+
             </div>
         </section>
     </div>
